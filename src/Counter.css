@@ -1,0 +1,127 @@
+.counter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.counter-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.counter-title {
+  font-size: 28px;
+  color: #333;
+  margin: 0 0 1.5rem 0;
+  font-weight: 600;
+}
+
+.counter-display {
+  background: #f5f7fa;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid #e0e0e0;
+}
+
+.counter-label {
+  color: #666;
+  font-size: 14px;
+  margin: 0 0 0.5rem 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.counter-value {
+  font-size: 64px;
+  font-weight: 700;
+  color: #667eea;
+  margin: 0;
+}
+
+.button-group {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: white;
+  color: #333;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn-increment,
+.btn-decrement {
+  flex: 1;
+  font-size: 24px;
+}
+
+.btn-increment:hover {
+  background: #e8f0fe;
+  border-color: #667eea;
+  color: #667eea;
+}
+
+.btn-decrement:hover {
+  background: #ffe8e8;
+  border-color: #ff6b6b;
+  color: #ff6b6b;
+}
+
+.btn-reset {
+  width: 100%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 14px 16px;
+  font-size: 16px;
+}
+
+.btn-reset:hover {
+  opacity: 0.9;
+  box-shadow: 0 6px 16px rgba(102, 126, 234, 0.4);
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  .counter-container {
+    padding: 1rem;
+  }
+
+  .counter-card {
+    padding: 1.5rem;
+  }
+
+  .counter-title {
+    font-size: 24px;
+  }
+
+  .counter-value {
+    font-size: 48px;
+  }
+}
